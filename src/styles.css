@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Montserrat";
+  src:
+    url("./fonts/montserrat.woff2") format("woff2"),
+    url("./fonts/montserrat.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -16,6 +25,8 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   header {
     display: flex;
     width: 100%;
@@ -42,7 +53,7 @@ header > div {
     align-items: center;
     width: 100%;
     max-width: 75%;
-
+    font-size: 17px;
     a {
       text-decoration: none;
       color: var(--color-dark-gray);
