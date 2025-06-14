@@ -29,10 +29,11 @@ body {
 header > div {
   flex: 1;
   max-width: 1400px;
-  padding: 36px;
+  padding: 24px 56px;
   display: flex;
+  justify-content: space-between;
   #logo img {
-    height: 36px;
+    height: 32px;
   }
 
   nav {
