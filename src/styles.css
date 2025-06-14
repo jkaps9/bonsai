@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-green: #00b289;
+  --color-dark-gray: #4c4d5f;
+  --color-white: #fff;
+  --color-yellow: #f8db62;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    width: 100%;
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
