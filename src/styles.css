@@ -34,6 +34,8 @@ body {
   padding: 0; */
 }
 
+/* HEADER */
+
 header > div {
   flex: 1;
   position: relative;
@@ -176,3 +178,5 @@ header > div {
     display: inherit;
   }
 }
+
+/* MAIN */
