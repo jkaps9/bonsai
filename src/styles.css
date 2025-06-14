@@ -8,6 +8,7 @@
 
 :root {
   --color-green: #00b289;
+  --color-green-darker: #03a17c;
   --color-dark-gray: #4c4d5f;
   --color-white: #fff;
   --color-yellow: #f8db62;
@@ -80,9 +81,18 @@ header > div {
         color: var(--color-green);
       }
 
+      #log-in:hover {
+        background-color: var(--color-green);
+        color: var(--color-white);
+      }
+
       #start-free {
         background-color: var(--color-green);
         color: var(--color-white);
+      }
+
+      #start-free:hover {
+        background-color: var(--color-green-darker);
       }
     }
   }
