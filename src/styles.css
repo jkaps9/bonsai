@@ -42,6 +42,19 @@ header > .flex-container {
       height: 36px;
     }
   }
+
+  nav {
+    display: none;
+  }
 }
 
 /* 991 px breakpoint for hamburger menu */
+@media screen and (min-width: 991px) {
+  header > .flex-container nav {
+    display: block;
+  }
+
+  #hamburger {
+    display: none;
+  }
+}
