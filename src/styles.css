@@ -122,6 +122,10 @@ header > div {
       width: 40px;
     }
   }
+
+  #hamburger {
+    z-index: 100;
+  }
 }
 
 @media screen and (min-width: 950px) {
