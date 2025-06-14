@@ -30,3 +30,18 @@ body {
 .hidden {
   display: none;
 }
+
+header > .flex-container {
+  flex: 1;
+  max-width: 1400px;
+  padding: 36px;
+
+  #logo {
+    margin-right: auto;
+    img {
+      height: 36px;
+    }
+  }
+}
+
+/* 991 px breakpoint for hamburger menu */
