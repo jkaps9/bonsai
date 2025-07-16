@@ -22,10 +22,15 @@ body {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  padding: 24px;
   header {
     display: flex;
     width: 100%;
   }
+  main {
+	  margin-top: 24px;
+  }
+
 }
 
 .hidden {
@@ -42,12 +47,16 @@ header > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
   #logo img {
     height: 32px;
   }
+  
+  nav.visible {
+    display: block;
+  }
 
   nav {
+	  display: none;
     flex-direction: column;
     position: absolute;
     top: 0;
