@@ -33,6 +33,10 @@ body {
 
 }
 
+ul {
+	list-style: none;
+}
+
 .hidden {
   display: none;
   /* height: 0px;
@@ -137,6 +141,13 @@ header > div {
   #hamburger {
     z-index: 100;
   }
+}
+
+.card {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
 }
 
 @media screen and (min-width: 950px) {
