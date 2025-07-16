@@ -43,6 +43,17 @@ ul {
   padding: 0; */
 }
 
+.button {
+        border: 1px solid var(--color-green);
+        border-radius: 4px;
+        padding: 13px 27px;
+        font-weight: 700;
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 20px;
+}
+
+
 /* HEADER */
 
 header > div {
@@ -76,10 +87,10 @@ header > div {
 
     font-size: 15px;
     a {
-      text-decoration: none;
-      color: var(--color-dark-gray);
-      padding-top: 16px;
-      padding-bottom: 16px;
+	    text-decoration: none;
+     	 color: var(--color-dark-gray);
+            padding-top: 16px;
+     	 padding-bottom: 16px;
     }
 
     .left {
@@ -96,16 +107,7 @@ header > div {
       display: flex;
       flex-direction: column;
       margin-top: 20px;
-      .button {
-        border: 1px solid var(--color-green);
-        border-radius: 4px;
-        padding: 13px 27px;
-        font-weight: 700;
-        font-size: 13px;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
+      
       #log-in {
         padding: 13px 22px;
         color: var(--color-green);
@@ -148,6 +150,18 @@ header > div {
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
+
+	.button {
+		text-decoration: none;
+		background-color: var(--color-green);                       color: var(--color-white);
+		padding: 26px 0;
+	}
+}
+
+.feature-list {
+	li {
+		padding: 12px 0;
+	}
 }
 
 @media screen and (min-width: 950px) {
