@@ -148,6 +148,7 @@ header > div {
 }
 
 .card {
+  position: relative;
   padding: 50px 23px 40px;
   display: flex;
   flex-direction: column;
@@ -219,6 +220,18 @@ header > div {
     padding: 22px 25px;
     margin-bottom: 0;
     font-size: 15px;
+  }
+
+  .popular-sash {
+    position: absolute;
+    top: 4%;
+    right: -24%;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 5px 100px;
+    font-size: 14px;
+    font-weight: 600;
+    transform: rotate(45deg);
   }
 }
 
