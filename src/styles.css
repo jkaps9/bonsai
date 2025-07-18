@@ -28,13 +28,12 @@ body {
     width: 100%;
   }
   main {
-	  margin-top: 24px;
+    margin-top: 24px;
   }
-
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 .hidden {
@@ -44,15 +43,14 @@ ul {
 }
 
 .button {
-        border: 1px solid var(--color-green);
-        border-radius: 4px;
-        padding: 13px 27px;
-        font-weight: 700;
-        font-size: 13px;
-        text-align: center;
-        margin-bottom: 20px;
+  border: 1px solid var(--color-green);
+  border-radius: 4px;
+  padding: 13px 27px;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 20px;
 }
-
 
 /* HEADER */
 
@@ -65,13 +63,13 @@ header > div {
   #logo img {
     height: 32px;
   }
-  
+
   nav.visible {
     display: block;
   }
 
   nav {
-	  display: none;
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 0;
@@ -87,10 +85,10 @@ header > div {
 
     font-size: 15px;
     a {
-	    text-decoration: none;
-     	 color: var(--color-dark-gray);
-            padding-top: 16px;
-     	 padding-bottom: 16px;
+      text-decoration: none;
+      color: var(--color-dark-gray);
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
 
     .left {
@@ -107,7 +105,7 @@ header > div {
       display: flex;
       flex-direction: column;
       margin-top: 20px;
-      
+
       #log-in {
         padding: 13px 22px;
         color: var(--color-green);
@@ -146,22 +144,52 @@ header > div {
 }
 
 .card {
-	padding: 24px;
-	display: flex;
-	flex-direction: column;
-	gap: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
 
-	.button {
-		text-decoration: none;
-		background-color: var(--color-green);                       color: var(--color-white);
-		padding: 26px 0;
-	}
+  .price-box {
+    margin-top: 1rem;
+    border-bottom: 2px solid var(--color-green);
+
+    .currency-symbol {
+      font-size: 1.75rem;
+      font-weight: 400;
+      margin-right: 0.5rem;
+      align-self: flex-start;
+      line-height: 43px;
+    }
+
+    .price {
+      display: flex;
+      align-items: flex-end;
+      font-size: 3.5em;
+      font-weight: 600;
+      color: var(--color-dark-gray);
+      line-height: 80px;
+    }
+
+    .price-time {
+      margin-left: 1rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+  }
+
+  .button {
+    text-decoration: none;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 26px 0;
+  }
 }
 
 .feature-list {
-	li {
-		padding: 12px 0;
-	}
+  li {
+    padding: 12px 0;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 950px) {
