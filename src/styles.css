@@ -177,8 +177,27 @@ main > section > .section-header {
   .toggle-container {
     flex: 1;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
+
+    .toggle {
+      width: 50px;
+      height: 29px;
+      margin: 0 28px;
+      background-color: var(--color-green);
+      border-radius: 200px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      .toggle-ball {
+        width: 25px;
+        height: 25px;
+        background-color: var(--color-white);
+        border-radius: 200px;
+        margin: 0 2px;
+      }
+    }
 
     img {
       position: absolute;
@@ -187,6 +206,10 @@ main > section > .section-header {
       bottom: 15px;
     }
   }
+}
+
+.pricing-cards {
+  padding-top: 40px;
 }
 
 .card {
