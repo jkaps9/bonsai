@@ -159,8 +159,12 @@ header > div {
 main > section > .section-header {
   position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
 
   h1 {
     font-size: 24px;
@@ -370,5 +374,18 @@ main > section > .section-header {
   main,
   footer {
     max-width: 1100px;
+  }
+
+  main > section > .section-header {
+    margin-top: 4%;
+    h1 {
+      font-size: 40px;
+    }
+    .toggle-container {
+      margin: 0;
+      img {
+        right: 20%;
+      }
+    }
   }
 }
