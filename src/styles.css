@@ -94,7 +94,7 @@ header > div {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-
+    z-index: 100;
     font-size: 15px;
     a {
       text-decoration: none;
