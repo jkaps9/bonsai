@@ -10,9 +10,9 @@ menuIcon.addEventListener("click", () => {
   menuOpen = !menuOpen;
   if (menuOpen) {
     menuIcon.src = closeImg;
-    menu.removeAttribute("style");
+    menu.classList.add("visible");
   } else {
     menuIcon.src = hamburgerImg;
-    menu.style.display = "none";
+    menu.classList.remove("visible");
   }
 });
