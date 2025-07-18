@@ -147,6 +147,21 @@ header > div {
   }
 }
 
+/* MAIN */
+main > section > .section-header {
+  h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  p {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.22px;
+  }
+}
+
 .card {
   position: relative;
   padding: 50px 23px 40px;
