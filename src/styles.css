@@ -211,6 +211,9 @@ main > section > .section-header {
 
 .pricing-cards {
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -223,6 +226,7 @@ main > section > .section-header {
   background-color: #fbfcff;
   box-shadow: 0 0 68px 0 var(--color-card-shadow);
   margin-bottom: 30px;
+  width: 100%;
 
   .text {
     h2 {
@@ -286,6 +290,7 @@ main > section > .section-header {
     padding: 22px 25px;
     margin-bottom: 0;
     font-size: 15px;
+    margin-top: auto;
   }
 
   overflow: hidden;
@@ -350,6 +355,13 @@ main > section > .section-header {
   .hidden {
     display: inherit;
   }
-}
 
-/* MAIN */
+  .pricing-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 32%;
+  }
+}
