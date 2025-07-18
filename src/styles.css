@@ -315,6 +315,7 @@ main > section > .section-header {
 
 /* FOOTER */
 footer {
+	margin-right: auto;
 	.list-section {
 		margin-bottom: 2rem;
 	}
