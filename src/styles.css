@@ -149,16 +149,27 @@ header > div {
 
 /* MAIN */
 main > section > .section-header {
+  display: flex;
+  flex-wrap: wrap;
+
   h1 {
     font-size: 24px;
     font-weight: 400;
     line-height: 120%;
+    margin-bottom: 20px;
   }
 
   p {
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 1.22px;
+  }
+
+  .toggle-container {
+    flex: 1;
+    display: flex;
+
+    margin-top: 50px;
   }
 }
 
