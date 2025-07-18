@@ -40,6 +40,13 @@ ul {
   list-style: none;
 }
 
+img {
+  border: 0;
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 100%;
+}
+
 .hidden {
   display: none;
   /* height: 0px;
@@ -149,7 +156,9 @@ header > div {
 
 /* MAIN */
 main > section > .section-header {
+  position: relative;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
 
   h1 {
@@ -170,6 +179,13 @@ main > section > .section-header {
     display: flex;
 
     margin-top: 50px;
+
+    img {
+      position: absolute;
+      left: auto;
+      right: -1%;
+      bottom: 15px;
+    }
   }
 }
 
