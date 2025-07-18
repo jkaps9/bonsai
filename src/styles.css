@@ -222,6 +222,8 @@ header > div {
     font-size: 15px;
   }
 
+  overflow: hidden;
+
   .popular-sash {
     position: absolute;
     top: 4%;
