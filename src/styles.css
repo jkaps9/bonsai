@@ -10,6 +10,8 @@
   --color-green: #00b289;
   --color-green-darker: #03a17c;
   --color-light-gray: #c3c3c3;
+  --color-card-border: rgba(2, 4, 69, 0.15);
+  --color-card-shadow: rgba(2, 4, 69, 0.08);
   --color-dark-gray: #4c4d5f;
   --color-white: #fff;
   --color-yellow: #f8db62;
@@ -144,9 +146,14 @@ header > div {
 }
 
 .card {
-  padding: 24px;
+  padding: 50px 23px 40px;
   display: flex;
   flex-direction: column;
+  border: 1px solid var(--color-card-border);
+  border-radius: 4px;
+  background-color: #fbfcff;
+  box-shadow: 0 0 68px 0 var(--color-card-shadow);
+  margin-bottom: 30px;
 
   .price-box {
     margin-top: 1rem;
