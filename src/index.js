@@ -23,6 +23,8 @@ const toggle = document.querySelector(".toggle");
 const toggleBall = toggle.querySelector(".toggle-ball");
 const monthly = document.querySelector(".monthly-text");
 const yearly = document.querySelector(".yearly-text");
+const price-boxes = document.querySelectorAll(".price-box");
+const prices = [{pricing: "monthly", prices: [24,39,79]}, {pricing: "yearly", prices: [17,32,52]};
 let pricing = "monthly";
 
 toggle.addEventListener("click", () => {
@@ -32,6 +34,7 @@ toggle.addEventListener("click", () => {
     monthly.style = "opacity: 0.65;";
     yearly.style = "opacity: 1;";
     toggleBall.style = "transform: translateX(21px);";
+	  price-boxes[0]
   } else {
     // Move to monthly
     pricing = "monthly";
