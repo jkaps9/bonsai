@@ -315,22 +315,27 @@ main > section > .section-header {
 
 /* FOOTER */
 footer {
-	margin-right: auto;
-	.list-section {
-		margin-bottom: 2rem;
-	}
+  padding: 40px 5% 156px;
 
-	.list-header{
-		margin-bottom: 1.5rem;
-		font-size: 1rem;
-	}
-	li {
-		line-height: 2rem;
-		font-size: 0.875rem;
-		+.active{
-			color: var(--color-green);
-		}
-	}
+  .list-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list-section {
+    margin-bottom: 2rem;
+  }
+
+  .list-header {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  li {
+    line-height: 2rem;
+    font-size: 0.875rem;
+    + .active {
+      color: var(--color-green);
+    }
+  }
 }
 
 @media screen and (min-width: 950px) {
@@ -407,5 +412,9 @@ footer {
         right: 20%;
       }
     }
+  }
+
+  footer {
+    padding: 100px 16% 96px;
   }
 }
