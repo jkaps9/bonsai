@@ -76,26 +76,33 @@ header > div {
     height: 32px;
   }
 
-  nav.visible {
+  .mobile-menu.visible {
     transform: translateX(0);
   }
 
-  nav {
+  .mobile-menu {
     transition: transform 0.3s linear;
     transform: translateX(100%);
-    flex-direction: column;
     position: fixed;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
     height: 100vh;
-    width: 100vw;
-    background-color: var(--color-white);
     padding: 123px 30px 0;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 100;
+  }
+
+  .main-menu {
+    display: none;
+  }
+
+  nav {
+    background-color: var(--color-white);
     font-size: 15px;
+
     a {
       text-decoration: none;
       color: var(--color-dark-gray);
@@ -376,11 +383,9 @@ section#add-ons {
 }
 
 @media screen and (min-width: 950px) {
-  header > div > nav {
-    transform: translateX(0);
+  header > div > nav.main-menu {
     display: flex;
     flex-direction: row;
-    position: static;
     height: 100%;
     max-width: 75%;
     max-width: 1400px;
@@ -400,6 +405,8 @@ section#add-ons {
       .button {
         margin-left: 17px;
         margin-bottom: 0;
+        line-height: 16px;
+        letter-spacing: 0.6px;
       }
       #log-in {
         padding-top: 12px;

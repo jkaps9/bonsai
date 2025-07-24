@@ -2,7 +2,7 @@ import "./styles.css";
 
 // MOBILE MENU
 const hamburger = document.querySelector(".hamburger");
-const mobileMenu = document.querySelector("nav");
+const mobileMenu = document.querySelector(".mobile-menu");
 
 hamburger.addEventListener("click", () => {
   mobileMenu.classList.toggle("visible");
