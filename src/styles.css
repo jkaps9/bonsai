@@ -411,10 +411,38 @@ section#add-ons {
 
     .left {
       flex-direction: row;
+      align-items: center;
 
-      * {
+      > * {
         margin-right: 40px;
         border: none;
+      }
+
+      .dropdown-nav-item {
+        display: flex;
+        gap: 2px;
+        position: relative;
+
+        * {
+          border: none;
+        }
+
+        .dropdown-arrow {
+          position: relative;
+          width: 1em;
+          height: 1em;
+          margin: auto 20px auto auto;
+          margin-right: 0;
+          background-image: url("./images/drop_down_arrow.svg");
+          background-position: 50% 50%;
+          background-size: auto;
+          background-repeat: no-repeat;
+        }
+        .dropdown-menu {
+          display: none;
+          position: absolute;
+          top: 24px;
+        }
       }
     }
 
