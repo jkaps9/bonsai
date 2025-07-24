@@ -340,6 +340,7 @@ main > section > .section-header {
 }
 
 section#add-ons {
+<<<<<<< HEAD
   font-size: 1rem;
 
   .card {
@@ -351,12 +352,46 @@ section#add-ons {
     font-size: 2em;
     font-weight: 600;
     line-height: 40px;
+=======
+  margin-top: 70px;
+  font-size: 1rem;
+
+  .section-header {
+    display: block;
+    margin: 20px 0 40px;
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 140%;
+      text-align: center;
+    }
+  }
+
+  .card {
+    padding: 20px 40px;
+    margin-bottom: 10px;
+    border: none;
+    .price-container {
+      padding: 15px 0;
+      .price {
+        font-size: 2em;
+        font-weight: 600;
+        line-height: 40px;
+        .price-time {
+          display: block;
+          font-size: 1rem;
+          font-weight: normal;
+        }
+      }
+    }
+>>>>>>> add-ons
   }
 
   div:first-of-type {
     .price {
       font-size: 1.5em;
       line-height: normal;
+<<<<<<< HEAD
     }
   }
 
@@ -372,11 +407,27 @@ section#add-ons {
     line-height: 30px;
   }
 
+=======
+      font-weight: 700;
+    }
+  }
+
+  .title,
+  a {
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+>>>>>>> add-ons
   a {
     text-decoration: none;
     color: var(--color-green);
     line-height: normal;
     margin-top: 1rem;
+<<<<<<< HEAD
+=======
+    display: block;
+>>>>>>> add-ons
   }
 }
 
@@ -443,10 +494,10 @@ section#add-ons {
   .pricing-cards {
     flex-direction: row;
     justify-content: space-between;
-  }
 
-  .card {
-    width: 32%;
+    .card {
+      width: 32%;
+    }
   }
 
   header,
@@ -462,6 +513,35 @@ section#add-ons {
     }
     .toggle-container {
       margin: 0;
+    }
+  }
+
+  section#add-ons {
+    margin-top: 80px;
+
+    .section-header {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  section#add-ons > .card {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    .price-container {
+      padding: 36px 0;
+    }
+
+    .title {
+      font-size: 1.375rem;
+      line-height: 1.4;
+    }
+
+    a {
+      font-size: 0.875rem;
     }
   }
 }
