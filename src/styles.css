@@ -419,17 +419,20 @@ section#add-ons {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--color-cta-bg);
-  padding: 4rem 3rem;
+  padding: 4rem 1rem 3rem;
   border-radius: 8px;
   .left {
-    width: 70%;
+    width: 100%;
+    padding-bottom: 3rem;
     h2 {
-      font-size: 2.2rem;
-      line-height: 130%;
-      font-weight: 600;
+      text-align: center;
+      font-size: 1.55rem;
+      line-height: 120%;
+      font-weight: 500;
     }
   }
   a.button {
@@ -687,6 +690,21 @@ footer {
 
     a {
       font-size: 0.875rem;
+    }
+  }
+
+  #cta > .cta-container {
+    flex-direction: row;
+    padding: 4rem 3rem;
+
+    .left {
+      width: 70%;
+      padding-bottom: 0;
+      h2 {
+        font-size: 2.2rem;
+        line-height: 130%;
+        font-weight: 600;
+      }
     }
   }
 
