@@ -181,6 +181,11 @@ header > div {
 }
 
 /* MAIN */
+main {
+  padding-top: 110px;
+  padding-bottom: 40px;
+}
+
 main > section > .section-header {
   position: relative;
   display: flex;
