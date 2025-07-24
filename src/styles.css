@@ -419,6 +419,7 @@ section#add-ons {
       }
 
       .dropdown-nav-item {
+        cursor: pointer;
         display: flex;
         gap: 2px;
         position: relative;
@@ -438,11 +439,61 @@ section#add-ons {
           background-size: auto;
           background-repeat: no-repeat;
         }
+
         .dropdown-menu {
+          flex: 0 0 auto;
           display: none;
+          background-color: white;
           position: absolute;
-          top: 24px;
+          top: 100%;
+          left: -150%;
+
+          z-index: 1;
+
+          ul {
+            width: 100%;
+            max-width: 352px;
+            min-width: 350px;
+
+            li {
+              padding: 0 40px;
+              position: relative;
+
+              div.content {
+                padding-top: 40px;
+                padding-bottom: 40px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+              }
+
+              h2 {
+                margin-bottom: 10px;
+              }
+            }
+
+            li:hover {
+              background-color: #fafafa;
+            }
+
+            li:first-of-type:hover {
+              background-image: url("./images/right_arrow.svg");
+              background-position: 95% 50%;
+              background-size: auto;
+              background-repeat: no-repeat;
+            }
+
+            li:last-of-type .content {
+              border-bottom: none;
+            }
+          }
         }
+      }
+
+      .dropdown-nav-item:hover .dropdown-menu {
+        display: block;
       }
     }
 
@@ -496,7 +547,7 @@ section#add-ons {
   header,
   main,
   footer {
-    max-width: 1100px;
+    max-width: 1120px;
   }
 
   main > section > .section-header {
