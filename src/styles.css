@@ -384,6 +384,7 @@ section#add-ons {
   .mobile-menu {
     display: none;
   }
+
   header > div > nav.main-menu {
     display: flex;
     flex-direction: row;
