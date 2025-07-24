@@ -425,13 +425,6 @@ section#add-ons {
     }
     .toggle-container {
       margin: 0;
-      img {
-        right: 20%;
-      }
     }
-  }
-
-  .toggle-container img {
-    right: 10%;
   }
 }
