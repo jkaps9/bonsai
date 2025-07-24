@@ -314,6 +314,7 @@ main > section > .section-header {
 }
 
 section#add-ons {
+  margin-top: 70px;
   font-size: 1rem;
 
   .card {
@@ -431,6 +432,10 @@ section#add-ons {
         right: 20%;
       }
     }
+  }
+
+  section#add-ons {
+    margin-top: 80px;
   }
 
   section#add-ons > .card {
