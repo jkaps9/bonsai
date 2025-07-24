@@ -317,6 +317,17 @@ section#add-ons {
   margin-top: 70px;
   font-size: 1rem;
 
+  .section-header {
+    display: block;
+    margin: 20px 0 40px;
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 140%;
+      text-align: center;
+    }
+  }
+
   .card {
     padding: 20px 40px;
     margin-bottom: 10px;
@@ -355,6 +366,7 @@ section#add-ons {
     color: var(--color-green);
     line-height: normal;
     margin-top: 1rem;
+    display: block;
   }
 }
 
@@ -436,6 +448,11 @@ section#add-ons {
 
   section#add-ons {
     margin-top: 80px;
+
+    .section-header {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   section#add-ons > .card {
