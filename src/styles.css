@@ -180,6 +180,7 @@ main > section > .section-header {
   }
 
   .toggle-container {
+    position: relative;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -313,45 +314,45 @@ main > section > .section-header {
   }
 }
 
-section#add-ons{
-	font-size: 1rem;
+section#add-ons {
+  font-size: 1rem;
 
-	.card {
-		padding: 30px 23px 20px;
-		margin-bottom: 12px;
-	}
+  .card {
+    padding: 30px 23px 20px;
+    margin-bottom: 12px;
+  }
 
-	.price {
-		font-size:2em;
-		font-weight: 600;
-		line-height: 40px;
-	}
+  .price {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 40px;
+  }
 
-	div:first-of-type{
-		.price{
-			font-size: 1.5em;
-			line-height: normal;	
-		}
-	}
+  div:first-of-type {
+    .price {
+      font-size: 1.5em;
+      line-height: normal;
+    }
+  }
 
-	.price-time {
-		display: block;
-		font-size: 1rem;
-		font-weight: normal;
-	}
+  .price-time {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+  }
 
-	.title,
-	a {
-		font-weight: 600;
-		line-height: 30px;
-	}
+  .title,
+  a {
+    font-weight: 600;
+    line-height: 30px;
+  }
 
-	a {
-		text-decoration: none;
-		color: var(--color-green);
-		line-height: normal;
-		margin-top: 1rem;
-	}
+  a {
+    text-decoration: none;
+    color: var(--color-green);
+    line-height: normal;
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (min-width: 950px) {
@@ -428,5 +429,9 @@ section#add-ons{
         right: 20%;
       }
     }
+  }
+
+  .toggle-container img {
+    right: 10%;
   }
 }
