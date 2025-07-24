@@ -58,3 +58,13 @@ toggle.addEventListener("click", () => {
     price.innerHTML = priceList[i];
   }
 });
+
+// FOOTER DROPDOWN ARROWS
+const dropdownArrows = document.querySelectorAll(".dropdown-arrow");
+
+dropdownArrows.forEach((arrow) =>
+  arrow.addEventListener("click", () => {
+    const dropdownList = arrow.nextElementSibling;
+    dropdownList.classList.toggle("visible");
+  }),
+);
