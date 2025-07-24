@@ -433,8 +433,23 @@ section#add-ons {
     }
   }
 
-  #add-ons > .card {
+  section#add-ons > .card {
     flex-direction: row-reverse;
+    align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    .price-container {
+      padding: 36px 0;
+    }
+
+    .title {
+      font-size: 1.375rem;
+      line-height: 1.4;
+    }
+
+    a {
+      font-size: 0.875rem;
+    }
   }
 }
