@@ -40,3 +40,12 @@ toggle.addEventListener("click", () => {
     toggleBall.style = "transform: translateX(0);";
   }
 });
+
+// FOOTER DROPDOWN ARROWS
+const dropdownArrows = document.querySelectorAll(".dropdown-arrow");
+
+dropdownArrows.forEach((arrow) =>
+  arrow.addEventListener("click", () => {
+    console.log("clicked!");
+  }),
+);
