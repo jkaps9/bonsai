@@ -7,7 +7,7 @@
 }
 
 :root {
-  --color-green: #00b289;
+  --color-green: #00b389;
   --color-green-darker: #03a17c;
   --color-light-gray: #c3c3c3;
   --color-card-border: rgba(2, 4, 69, 0.15);
@@ -320,18 +320,31 @@ footer {
   .list-container {
     display: flex;
     flex-wrap: wrap;
-  }
-  .list-section {
-    margin-bottom: 2rem;
+    max-width: 1220px;
+    justify-content: space-between;
+
+    .list-section {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 25px;
+      align-items: flex-start;
+    }
   }
 
   .list-header {
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
+    margin-bottom: 1.57rem;
+    font-size: 1.125rem;
   }
+
   li {
     line-height: 2rem;
     font-size: 0.875rem;
+
+    + .bold {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
     + .active {
       color: var(--color-green);
     }
