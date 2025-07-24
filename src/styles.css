@@ -343,6 +343,7 @@ footer {
     + .bold {
       font-size: 1rem;
       font-weight: 600;
+      margin-bottom: 10px;
     }
 
     + .active {
@@ -428,6 +429,13 @@ footer {
   }
 
   footer {
-    padding: 100px 16% 96px;
+    width: 100%;
+    padding: 100px 0 96px;
+
+    .list-container {
+      .list-section {
+        width: 30%;
+      }
+    }
   }
 }
