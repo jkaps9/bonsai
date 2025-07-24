@@ -317,27 +317,30 @@ section#add-ons {
   font-size: 1rem;
 
   .card {
-    padding: 30px 23px 20px;
-    margin-bottom: 12px;
-  }
-
-  .price {
-    font-size: 2em;
-    font-weight: 600;
-    line-height: 40px;
+    padding: 20px 40px;
+    margin-bottom: 10px;
+    border: none;
+    .price-container {
+      padding: 15px 0;
+      .price {
+        font-size: 2em;
+        font-weight: 600;
+        line-height: 40px;
+        .price-time {
+          display: block;
+          font-size: 1rem;
+          font-weight: normal;
+        }
+      }
+    }
   }
 
   div:first-of-type {
     .price {
       font-size: 1.5em;
       line-height: normal;
+      font-weight: 700;
     }
-  }
-
-  .price-time {
-    display: block;
-    font-size: 1rem;
-    font-weight: normal;
   }
 
   .title,
@@ -428,5 +431,10 @@ section#add-ons {
         right: 20%;
       }
     }
+  }
+
+  #add-ons > .card {
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
