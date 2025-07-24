@@ -349,6 +349,17 @@ footer {
     + .active {
       color: var(--color-green);
     }
+
+    ul.dropdown-list {
+      display: none;
+      li {
+        margin-left: 8px;
+      }
+    }
+
+    ul.dropdown-list.visible {
+      display: block;
+    }
   }
 }
 
