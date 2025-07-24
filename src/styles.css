@@ -381,6 +381,9 @@ section#add-ons {
 }
 
 @media screen and (min-width: 950px) {
+  .mobile-menu {
+    display: none;
+  }
   header > div > nav.main-menu {
     display: flex;
     flex-direction: row;
