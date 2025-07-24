@@ -77,11 +77,12 @@ header > div {
   }
 
   nav.visible {
-    display: block;
+    transform: translateX(0);
   }
 
   nav {
-    display: none;
+    transition: transform 0.3s linear;
+    transform: translateX(100%);
     flex-direction: column;
     position: absolute;
     top: 0;
