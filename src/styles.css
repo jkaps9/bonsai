@@ -85,8 +85,6 @@ header > div {
     transform: translateX(100%);
     position: fixed;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
     z-index: 100;
     top: 0;
     left: 0;
@@ -390,6 +388,7 @@ section#add-ons {
     max-width: 75%;
     max-width: 1400px;
     padding: 0;
+
     .left {
       flex-direction: row;
 
@@ -400,18 +399,24 @@ section#add-ons {
     }
 
     .right {
+      flex: 0 0 auto;
       flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
       margin-top: 0;
+
       .button {
         margin-left: 17px;
         margin-bottom: 0;
         line-height: 16px;
         letter-spacing: 0.6px;
       }
+
       #log-in {
         padding-top: 12px;
         padding-bottom: 9px;
       }
+
       #start-free {
         padding-top: 12px;
         padding-bottom: 9px;
