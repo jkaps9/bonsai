@@ -46,6 +46,7 @@ const dropdownArrows = document.querySelectorAll(".dropdown-arrow");
 
 dropdownArrows.forEach((arrow) =>
   arrow.addEventListener("click", () => {
-    console.log("clicked!");
+    const dropdownList = arrow.nextElementSibling;
+    dropdownList.classList.toggle("visible");
   }),
 );
