@@ -340,19 +340,6 @@ main > section > .section-header {
 }
 
 section#add-ons {
-<<<<<<< HEAD
-  font-size: 1rem;
-
-  .card {
-    padding: 30px 23px 20px;
-    margin-bottom: 12px;
-  }
-
-  .price {
-    font-size: 2em;
-    font-weight: 600;
-    line-height: 40px;
-=======
   margin-top: 70px;
   font-size: 1rem;
 
@@ -384,30 +371,12 @@ section#add-ons {
         }
       }
     }
->>>>>>> add-ons
   }
 
   div:first-of-type {
     .price {
       font-size: 1.5em;
       line-height: normal;
-<<<<<<< HEAD
-    }
-  }
-
-  .price-time {
-    display: block;
-    font-size: 1rem;
-    font-weight: normal;
-  }
-
-  .title,
-  a {
-    font-weight: 600;
-    line-height: 30px;
-  }
-
-=======
       font-weight: 700;
     }
   }
@@ -418,16 +387,12 @@ section#add-ons {
     line-height: 30px;
   }
 
->>>>>>> add-ons
   a {
     text-decoration: none;
     color: var(--color-green);
     line-height: normal;
     margin-top: 1rem;
-<<<<<<< HEAD
-=======
     display: block;
->>>>>>> add-ons
   }
 }
 
