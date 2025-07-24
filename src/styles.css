@@ -15,6 +15,7 @@
   --color-dark-gray: #4c4d5f;
   --color-white: #fff;
   --color-yellow: #f8db62;
+  --color-cta-bg: #f2faff;
 }
 
 body {
@@ -346,6 +347,7 @@ main > section > .section-header {
 
 section#add-ons {
   margin-top: 70px;
+  padding-bottom: 40px;
   font-size: 1rem;
 
   .section-header {
@@ -398,6 +400,47 @@ section#add-ons {
     line-height: normal;
     margin-top: 1rem;
     display: block;
+  }
+}
+
+/* CTA */
+#cta {
+  padding: 40px 0;
+  width: 100%;
+}
+
+.text-green {
+  color: var(--color-green);
+}
+
+.cta-container {
+  width: 100%;
+  max-width: 58rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-cta-bg);
+  padding: 4rem 3rem;
+  border-radius: 8px;
+  .left {
+    width: 70%;
+    h2 {
+      font-size: 2.2rem;
+      line-height: 130%;
+      font-weight: 600;
+    }
+  }
+  a.button {
+    background-color: var(--color-green);
+    text-decoration: none;
+    color: var(--color-white);
+    width: auto;
+  }
+
+  a.button:hover {
+    background-color: var(--color-green-darker);
   }
 }
 
