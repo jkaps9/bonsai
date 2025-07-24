@@ -1,21 +1,12 @@
 import "./styles.css";
-import hamburgerImg from "./images/hamburger.svg";
-import closeImg from "./images/close.svg";
 
 // MOBILE MENU
-const menuIcon = document.querySelector("#hamburger");
-let menuOpen = false;
-const menu = document.querySelector("nav");
+const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector("nav");
 
-menuIcon.addEventListener("click", () => {
-  menuOpen = !menuOpen;
-  if (menuOpen) {
-    menuIcon.src = closeImg;
-    menu.classList.add("visible");
-  } else {
-    menuIcon.src = hamburgerImg;
-    menu.classList.remove("visible");
-  }
+hamburger.addEventListener("click", () => {
+  mobileMenu.classList.toggle("visible");
+  hamburger.classList.toggle("close");
 });
 
 // TOGGLE

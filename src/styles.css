@@ -161,6 +161,18 @@ header > div {
       transition: transform 0.3s linear;
     }
   }
+
+  .hamburger.close {
+    #top {
+      transform: translate(0px, 12px) rotate(45deg);
+    }
+    #middle {
+      transform: scale(0);
+    }
+    #bottom {
+      transform: translate(0px, -12px) rotate(-45deg);
+    }
+  }
 }
 
 /* MAIN */
