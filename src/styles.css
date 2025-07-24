@@ -412,7 +412,7 @@ section#add-ons {
     }
   }
 
-  #hamburger {
+  header > div > .hamburger {
     display: none;
   }
 
