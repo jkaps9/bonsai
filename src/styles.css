@@ -447,6 +447,39 @@ section#add-ons {
   }
 }
 
+/* FAQ */
+section#faq {
+  padding: 40px 0;
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 2.5rem 0;
+  }
+
+  .question {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 20px 9% 10px;
+    cursor: pointer;
+    background-image: url("./images/drop_down_arrow.svg");
+    background-position: 100% 50%;
+    background-size: auto 32px;
+    background-repeat: no-repeat;
+  }
+
+  .answer {
+    display: none;
+    font-size: 14px;
+    margin: 0 9%;
+  }
+  .answer.visible {
+    display: block;
+  }
+}
+
 /* FOOTER */
 footer {
   padding: 40px 5% 156px;
