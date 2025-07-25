@@ -59,6 +59,15 @@ toggle.addEventListener("click", () => {
   }
 });
 
+// FAQ Accordion
+const accordionQuestions = document.querySelectorAll("#faq > .faqs .question");
+accordionQuestions.forEach((item) => {
+  item.addEventListener("click", () => {
+    const answer = item.nextElementSibling;
+    answer.classList.toggle("visible");
+  });
+});
+
 // FOOTER DROPDOWN ARROWS
 const dropdownArrows = document.querySelectorAll(".dropdown-arrow");
 
