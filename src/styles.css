@@ -458,6 +458,13 @@ section#faq {
     margin: 2.5rem 0;
   }
 
+  .faqs {
+    width: 100%;
+    max-width: 58rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .question {
     font-weight: 700;
     font-size: 25px;
@@ -468,6 +475,10 @@ section#faq {
     background-position: 100% 50%;
     background-size: auto 32px;
     background-repeat: no-repeat;
+  }
+
+  .question:hover {
+    color: var(--color-green);
   }
 
   .answer {
